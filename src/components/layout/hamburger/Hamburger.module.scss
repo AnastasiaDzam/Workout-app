@@ -14,8 +14,10 @@
 	> button {
 		font-size: 30px;
 
-		> svg > path {
-			fill: #fff;
+		> svg {
+			> path {
+				fill: #fff;
+			}
 		}
 	}
 
@@ -38,6 +40,10 @@
 
 		> ul {
 			list-style: none;
+
+			button {
+				font-size: 16px;
+			}
 
 			a {
 				color: #000;

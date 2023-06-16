@@ -11,3 +11,4 @@ const Button = ({children, clickHandler, size = 'xl'}) => {
 }
 
 export default Button
+ 

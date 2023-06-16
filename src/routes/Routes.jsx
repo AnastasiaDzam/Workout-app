@@ -12,16 +12,19 @@ const Router = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-				{/* TODO: Auth routes */}
 				{routes.map(route => {
-				
-				return(
-					<Route
-						key={route.path}
-						path={route.path}
-						element={<route.component />}
-					/>
-				)})}
+					if (route.isAuth && !isAuth) {
+						return false
+					}
+
+					return (
+						<Route
+							key={route.path}
+							path={route.path}
+							element={<route.component />}
+						/>
+					)
+				})}
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</BrowserRouter>

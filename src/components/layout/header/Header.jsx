@@ -27,7 +27,7 @@ const Header = ({ backLink = '' }) => {
 			) : (
 				<button
 					onClick={() => {
-						navigate(isAuth ? '/profile' : "/auth")
+						navigate(isAuth ? '/profile' : '/auth')
 					}}
 				>
 					<SlUser fill='#fff' fontSize={25} />
